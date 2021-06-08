@@ -20,14 +20,17 @@ export class AppComponent {
    */
    @ViewChild('sidenav') sidenav!: MatSidenavContainer;
    opened: boolean = false;
+
   constructor(private spinner: NgxSpinnerService) {
  
   }
   ngOnInit() {
-    this.spinner.show();
-    setTimeout(() => {
-      this.spinner.hide();
-    }, 2000);
+    
+  
+    this.showSpinner();
+    
+   
+    
   }
 
   showSpinner() {
@@ -36,7 +39,7 @@ export class AppComponent {
       this.spinner.hide();
     }, 3000);
   }
-
+  
   @HostListener('window:resize',['$event'])
   onResize(event:any) {
     if(event.target.innerWidth > 960) {

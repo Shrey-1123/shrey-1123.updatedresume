@@ -15,6 +15,8 @@ import { HeadersComponent } from './headers/headers.component';
 import { FootersComponent } from './footers/footers.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AccomplishmentComponent } from './accomplishment/accomplishment.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -27,7 +29,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ContactComponent,
     ProjectsComponent,
     HeadersComponent,
-    FootersComponent
+    FootersComponent,
+    AccomplishmentComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
    
     
   ],

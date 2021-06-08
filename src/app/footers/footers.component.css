@@ -1,0 +1,9 @@
+
+.footer{
+    min-height: fit-content;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 0%;
+    background:lightgrey;
+    margin-top:0;
+    text-align:Center;
+}
