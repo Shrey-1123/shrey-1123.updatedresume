@@ -1,1 +1,16 @@
-<p>home works!</p>
+<section fxLayout="row" fxLayoutAlign="center center" class="banner">
+
+    <div fxFlex.gt-sm="50" fxLayout="column" fxLayoutAlign="center center" class="textbox" wmAnimate="rollIn" aos>
+
+        <h1 class="mat-display-1"><b>{{ content.top.title }}</b></h1>
+
+        <p>{{ content.top.description }}</p>
+
+
+
+
+    </div>
+
+    <img fxHide.lt-sm fxFlex="50" [src]="content.top.image" wmAnimate="fadeInDown" />
+
+</section>

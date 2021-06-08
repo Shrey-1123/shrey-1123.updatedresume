@@ -1,4 +1,4 @@
-<ngx-spinner bdColor="rgba(0,0,0,0.8)" size="medium"  color="#fff" type="line-scale-party" [fullScreen]="true">
+<ngx-spinner bdColor="rgba(0,0,0,0.9)" size="medium"  color="#fff" type="line-scale-party" [fullScreen]="true">
   <p style="color: white"></p>
 </ngx-spinner>
 
@@ -50,27 +50,27 @@
   <mat-sidenav-content fxLayout="column">
      <!--main page content-->
     <router-outlet></router-outlet>
-     <div *ngIf="!opened">
+     <div>
       <app-home></app-home>
      </div>
 
-     <div *ngIf="!opened">
+     <div>
       <app-about></app-about>
      </div>
 
-     <div *ngIf="!opened">
+     <div>
       <app-projects></app-projects>
      </div>
 
-     <div *ngIf="!opened">
+     <div>
       <app-accomplishment></app-accomplishment>
      </div>
 
-     <div *ngIf="!opened">
+     <div>
      <app-skills></app-skills>
      </div>
 
-     <div *ngIf="!opened">
+     <div>
       <app-contact></app-contact>
      </div>
      <app-footers fxFlexOffset="auto"></app-footers>
