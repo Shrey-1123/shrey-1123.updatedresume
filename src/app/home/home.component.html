@@ -1,16 +1,17 @@
 <section fxLayout="row" fxLayoutAlign="center center" class="banner">
 
-    <div fxFlex.gt-sm="50" fxLayout="column" fxLayoutAlign="center center" class="textbox" wmAnimate="rollIn" aos>
+    <div fxFlex.gt-sm="50" fxLayout="column" fxLayoutAlign="center left" class="textbox" >
+        
+        
+        <h1 class="typing mat-display-3"></h1>
 
-        <h1 class="mat-display-1"><b>{{ content.top.title }}</b></h1>
-
-        <p>{{ content.top.description }}</p>
+        <p class="mat-display-0">{{ content.top.description }}</p>
 
 
 
 
     </div>
 
-    <img fxHide.lt-sm fxFlex="50" [src]="content.top.image" wmAnimate="fadeInDown" />
+    <img fxHide.lt-sm fxFlex="40" [src]="content.top.image"/>
 
 </section>

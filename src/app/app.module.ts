@@ -20,6 +20,7 @@ import { SkillsComponent } from './skills/skills.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { SkillsComponent } from './skills/skills.component';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
+
 
    
     

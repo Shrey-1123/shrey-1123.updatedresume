@@ -2,9 +2,9 @@
   <p style="color: white"></p>
 </ngx-spinner>
 
-<mat-toolbar color="white">
+<mat-toolbar class="nav" color="white">
   <div fxShow="true" fxHide.gt-sm="true">
-    <button (click)="sidenav.toggle()" (click)="IOpen()" mat-icon-button color="primary"
+    <button (click)="sidenav.toggle()" (click)="IOpen()" mat-icon-button color="success"
       aria-label="Example icon button with a menu icon">
       <mat-icon *ngIf="!opened">menu</mat-icon>
       <mat-icon *ngIf="opened">close</mat-icon>
@@ -31,7 +31,7 @@
 </mat-toolbar>
 
 
-<mat-sidenav-container class="sidepart" fxFlexFill class="example-container">
+<mat-sidenav-container class="sidepart"  class="example-container">
   <mat-sidenav #sidenav fxLayout="column" mode="over">
     <img id="profile1" class="avatar mat-elevation-z8" src="./assets/Profile.jpg">
     <h4 class="name">Shrey Kumar</h4>
