@@ -8,7 +8,7 @@
     flex: 1 1 auto;
   }
   .nav{
-    background: rgba(10, 3, 73, 0.7);
+    background: rgba(16, 13, 185, 0.7);
   }
   .navitems{
       margin-right: 50%;
@@ -16,7 +16,7 @@
   .example-container{
 
     height : calc(100vh -65px);
-    background: linear-gradient(rgba(10, 3, 73, 0.7), rgba(255, 255, 255, 0.637));
+    background: -webkit-linear-gradient(rgba(16, 13, 185, 0.7), rgba(255, 255, 255, 0.637));
   }
 
   mat-sidenav{
@@ -32,6 +32,11 @@
   }
   #profile1{
     border-radius:50%;
+  }
+  #profile1:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
   }
   .name
   {

@@ -3,6 +3,7 @@ import { HostListener } from '@angular/core';
 import { Component, Injectable } from '@angular/core';
 import { MatSidenavContainer } from '@angular/material/sidenav';
 import { NgxSpinnerService } from 'ngx-spinner';
+import * as AOS from 'aos';
 
 
 
@@ -26,7 +27,7 @@ export class AppComponent {
   }
   ngOnInit() {
     
-  
+    AOS.init();
     this.showSpinner();
     
    

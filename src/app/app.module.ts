@@ -42,7 +42,7 @@ import { SkillsComponent } from './skills/skills.component';
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
 
 
    
