@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
+    
     setInterval(()=> { this.myFunction() },400);
 
   }

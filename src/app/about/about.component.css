@@ -5,6 +5,11 @@
     justify-content: space-between;
 }
 
+p{
+  font-size:large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .max-width{
   max-width: 1300px;
   padding: 0 80px;
@@ -76,12 +81,22 @@ section .title::before{
   color: crimson;
   background: none;
 }
-
-img:hover{ 
+.img-wrapper
+{ 
+   
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%; 
+    
+}
+.img-wrapper:hover img{ 
 
     
     
-    transform: scale(1.2,1.2);
+    transform: scale(1.1,1.1);
     transition-duration: 500ms;
     transition-timing-function: ease-out;
     opacity: 0.7;

@@ -17,6 +17,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AccomplishmentComponent } from './accomplishment/accomplishment.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 
 
@@ -32,7 +33,8 @@ import { SkillsComponent } from './skills/skills.component';
     HeadersComponent,
     FootersComponent,
     AccomplishmentComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,88 @@
-<p>projects works!</p>
+<Section fxLayout="column" fxlayoutalign="center center" class="outersection">
+    <div fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-sm="10">
+        <h1 class="typing mat-display-1">Recent Projects</h1>
+        <div class="project-tabs" fxlayout="column" fxlayoutalign="center left" fxFlex.gt-sm="10">
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="ALL">
+                    <div class="content">
+                        <div class="cardbox" fxLayout="row wrapper" fxLayoutGap="16px grid">
+                          <div *ngFor="let project of projects">
+                  
+                            <mat-card class="mat-elevation-z4" >
+                              
+                              <mat-card-header>
+                                <mat-card-title>{{project.Name}}</mat-card-title>
+                              </mat-card-header>
+                              <img mat-card-image src={{project.imgURL}}>
+                              <mat-card-content>
+                                <p>
+                                  {{project.ShortDescription}}
+                                </p>
+                              </mat-card-content>
+                            </mat-card>
+                            <div class="info">
+                              <h1 class="info-h1">For more information click this</h1>
+                              <button class="info-btn">Read more</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                </mat-tab>
+                <mat-tab label="PHP/JAVASCRIPT">
+                    <div data-aos="fade-in" class="content" >
+                        <div fxLayout="row" fxLayoutGap="16px grid">
+                          <div *ngFor="let project of projects">
+                            <div class="cardbox" *ngIf="project.Category==='PHP/JAVASCRIPT'">
+                              
+                              <mat-card class="mat-elevation-z4">
+                                <mat-card-header>
+                                  <mat-card-title>{{project.Name}}</mat-card-title>
+                                </mat-card-header>
+                                <img mat-card-image src={{project.imgURL}}>
+                                
+                                <mat-card-content>
+                                  <p>
+                                    {{project.ShortDescription}}
+                                  </p>
+                                </mat-card-content>
+                              </mat-card>
+                              <div class="info">
+                                <h1 class="info-h1">For more information click this</h1>
+                                <button class="info-btn">Read more</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                </mat-tab>
+                <mat-tab label="ANGULAR/.NET/OTHERS">
+                  <div data-aos="fade-in" class="content" >
+                      <div fxLayout="row" fxLayoutGap="16px grid">
+                        <div class="cardbox" *ngFor="let project of projects">
+                          <div *ngIf="project.Category==='ANGULAR/.NET/OTHERS'">
+                            
+                            <mat-card class="mat-elevation-z4">
+                              <mat-card-header>
+                                <mat-card-title>{{project.Name}}</mat-card-title>
+                              </mat-card-header>
+                              <img mat-card-image src={{project.imgURL}}>
+                              
+                              <mat-card-content>
+                                <p>
+                                  {{project.ShortDescription}}
+                                </p>
+                              </mat-card-content>
+                            </mat-card>
+                            <div class="info">
+                              <h1 class="info-h1">For more information click this</h1>
+                              <button class="info-btn">Read more</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+              </mat-tab>
+              </mat-tab-group>
+        </div>
+    </div>
+</Section>

@@ -1,0 +1,62 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.column-label {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+mat-card{
+    
+    background:rgba(247, 159, 225, 0.8);
+    box-shadow:  0 4px 8px 0 rgba(15, 11, 231, 0.904), 0 6px 20px 0 rgba(240, 6, 96, 0.966);
+}
+ .info{
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 1;
+    transform: translateY(30px);
+    transition: 0.5s;
+    margin-bottom: 25px;
+}  
+.info-h1{
+    margin:0px;
+}
+.info-btn{
+    padding: 0.6rem;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s ease;
+
+}
+.info-btn:hover{
+
+    background: rgb(255, 30, 30);
+    color: white;
+}
+
+mat-card:hover{
+    transform: translate(0px, 10px);
+}
+
+.cardbox{
+    
+    overflow: hidden;
+    transition:0.4 ease-out;
+}
