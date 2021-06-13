@@ -1,0 +1,54 @@
+.subtitle {
+    margin: 2em 0 2em 0;
+  }
+  .fancy {
+    line-height: 0.5;
+    text-align: center;
+  }
+  .fancy span {
+    display: inline-block;
+    position: relative;  
+  }
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    top: 0;
+    width: 600px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+
+  .wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    background-color:transparent;
+    color: #444;
+    
+  }
+
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 150%;
+    justify-content:center;
+
+  }
+  img{ 
+      height:90px;
+      width:70px;
+  }

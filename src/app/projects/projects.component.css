@@ -3,6 +3,36 @@
     position: relative;
   }
 
+  .subtitle {
+    margin: 2em 0 2em 0;
+  }
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+  }
+  .fancy span {
+    display: inline-block;
+    position: relative;  
+  }
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    top: 0;
+    width: 600px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
 .content {
     padding: 16px;
 }
@@ -72,13 +102,17 @@
     object-fit: cover;
     position: absolute;
     bottom: 0;
+    left: 0;
+    margin-left:5px
+
    
     
    
     
   }
   .card .info {
-      margin-top:0px;
+
+    margin-top:0px;
     position: relative;
     z-index: 3;
     color: white;
@@ -86,13 +120,9 @@
     transform: translateY(50px);
     transition: 0.5s;
   }
-  .card .info h1 {
-    margin: 0px 0px 0px 0px;
-    font-size: small;
-    
-  }
  
-  .card .info button {
+.info-btn {
+
     padding: 0.6rem;
     outline: none;
     border: none;
@@ -102,61 +132,15 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
+    margin-right: 90px;
   }
-  .card .info button:hover {
+.info-btn:hover {
     background: rgb(226, 21, 31);
     color: white;
   }
- /* mat-card .info{
 
-   
-    position: relative;
-    z-index: 3;
+
+  .modal{
+    background:black;
     color: white;
-    opacity: 1;
-    transform: translateY(30px);
-    transition: 0.5s;
-    
-}  
-.info-h1{
-    margin:0px;
-}
-.info-btn{
-    padding: 0.6rem;
-      outline: none;
-      border: none;
-      border-radius: 3px;
-      background: white;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.4s ease;
-
-}
-.info-btn:hover{
-
-    background: rgb(255, 30, 30);
-    color: white;
-}
-
-mat-card:hover{
-    transform: translate(0px, 10px);
-}
-
-
-.cardbox{
-    
-    
-    transition:0.4 ease-out;
-}
-img{ 
-
-    margin-bottom: 1px;
-    width: 310px;
-    height: 360px;
-    -o-object-fit: cover;
-    top:0;
-    object-fit: cover;
-    position: relative;
-    border-radius: 15px;
-} */
+  }

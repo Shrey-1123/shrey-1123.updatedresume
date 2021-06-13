@@ -1,6 +1,6 @@
 <Section fxLayout="column" fxlayoutalign="center center" class="outersection">
   <div fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-sm="10">
-    <h1 class="typing mat-display-1">Recent Projects</h1>
+    <h1 class="subtitle fancy"><span>Recent Projects</span></h1>
     <div class="project-tabs" fxlayout="column wrapper" fxlayoutalign="center left" fxFlex.gt-sm="10">
       <mat-tab-group mat-align-tabs="center">
         <mat-tab label="ALL">
@@ -11,10 +11,45 @@
                   <div class="card">
                     <img mat-card-image src={{project.imgURL}}>
                     <div class="info">
-                      <button>Learn more</button>
+                      <button class="info-btn" (click)="openModalWithClass(template)">Learn more</button>
                     </div>
                   </div>
                 </mat-card>
+                <!--Modal template starts-->
+                <ng-template data-aos="fade-in" class="modal" #template>  
+                
+                  <div class="modal-header">  
+                
+                    <h4 class="modal-title pull-left">Modal</h4>  
+                
+                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">  
+                
+                      <span aria-hidden="true">×</span>  
+                
+                    </button>  
+                
+                  </div>  
+                
+                  <div class="modal-body">  
+                    <mat-grid-list cols="4" rowHeight="100px">
+                      <mat-grid-tile
+                          *ngFor="let tile of tiles"
+                          [colspan]="tile.cols"
+                          [rowspan]="tile.rows"
+                          [style.background]="tile.color">
+                        {{tile.text}}
+                      </mat-grid-tile>
+                    </mat-grid-list>
+                  </div>  
+                
+                  <div class="modal-footer">  
+                
+                    <button type="button" class="btn btn-default" (click)="modalRef.hide()">Close</button>  
+                
+                  </div>  
+                
+                </ng-template> 
+                <!--Modal template ends-->
               </div>
             </div>
           </div>
@@ -28,10 +63,65 @@
                     <div class="card">
                       <img mat-card-image src={{project.imgURL}}>
                       <div class="info">
-                        <button>Learn more</button>
+                        <button class="info-btn" (click)="openModalWithClass(template)">Learn more</button>
                       </div>
                     </div>
                   </mat-card>
+                   <!--Modal template starts-->
+                <ng-template #template>  
+                
+                  <div class="modal-header">  
+                
+                    <h4 class="modal-title pull-left">Modal</h4>  
+                
+                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">  
+                
+                      <span aria-hidden="true">×</span>  
+                
+                    </button>  
+                
+                  </div>  
+                
+                  <div class="modal-body">  
+                
+                    <h3>List of my upcomming articles in DZone</h3>  
+                
+                    <ul>  
+                
+                      <li>Use of Ngx-Bootstrap Modal in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Progres Bar in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Datepicker in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Timepicker in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Dropdown in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Sortable in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Collapse in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Carousel in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Typehead in Angular 8</li>  
+                
+                       
+                
+                    </ul>  
+                
+                    <h3>You can check my all DZone Articles <a href="https://dzone.com/users/3961436/sidmvp07.html">here</a></h3>  
+                
+                  </div>  
+                
+                  <div class="modal-footer">  
+                
+                    <button type="button" class="btn btn-default" (click)="modalRef.hide()">Close</button>  
+                
+                  </div>  
+                
+                </ng-template> 
+                <!--Modal template ends-->
                 </div>
               </div>
             </div>
@@ -46,10 +136,66 @@
                     <div class="card">
                       <img mat-card-image src={{project.imgURL}}>
                       <div class="info">
-                        <button>Learn more</button>
+
+                        <button class="info-btn" (click)="openModalWithClass(template)">Learn more</button>
                       </div>
                     </div>
                   </mat-card>
+                     <!--Modal template starts-->
+                <ng-template #template>  
+                
+                  <div class="modal-header">  
+                
+                    <h4 class="modal-title pull-left">Modal</h4>  
+                
+                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">  
+                
+                      <span aria-hidden="true">×</span>  
+                
+                    </button>  
+                
+                  </div>  
+                
+                  <div class="modal-body">  
+                
+                    <h3>List of my upcomming articles in DZone</h3>  
+                
+                    <ul>  
+                
+                      <li>Use of Ngx-Bootstrap Modal in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Progres Bar in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Datepicker in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Timepicker in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Dropdown in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Sortable in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Collapse in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Carousel in Angular 8</li>  
+                
+                      <li>Use of Ngx-Bootstrap Typehead in Angular 8</li>  
+                
+                       
+                
+                    </ul>  
+                
+                    <h3>You can check my all DZone Articles <a href="https://dzone.com/users/3961436/sidmvp07.html">here</a></h3>  
+                
+                  </div>  
+                
+                  <div class="modal-footer">  
+                
+                    <button type="button" class="btn btn-default" (click)="modalRef.hide()">Close</button>  
+                
+                  </div>  
+                
+                </ng-template> 
+                <!--Modal template ends-->
                 </div>
               </div>
             </div>

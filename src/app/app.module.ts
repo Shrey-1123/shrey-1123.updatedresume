@@ -18,6 +18,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AccomplishmentComponent } from './accomplishment/accomplishment.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 
@@ -44,8 +46,9 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    ModalModule.forRoot(), // It is necessary forRoot(), otherwise it will show no Providers 
+    CarouselModule
 
    
     

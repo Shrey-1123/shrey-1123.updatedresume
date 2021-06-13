@@ -8,8 +8,20 @@
     flex: 1 1 auto;
   }
   .nav{
-    background: rgba(16, 13, 185, 0.7);
+    background: linear-gradient(-1deg, #f1977c, #e678a2, #8dd2eb, #82ebd2);
+    animation: grad 15s ease infinite;
   }
+  @keyframes grad {
+    0% {
+        background-position: 0% 5%;
+    }
+    5% {
+        background-position: 10% 5%;
+    }
+    10% {
+        background-position: 0% 5%;
+    }
+}
   .navitems{
       margin-right: 50%;
   }

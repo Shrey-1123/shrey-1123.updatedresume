@@ -11,5 +11,5 @@ export class AccomplishmentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

@@ -5,6 +5,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 const MaterialComponent =[
@@ -13,7 +14,8 @@ const MaterialComponent =[
   MatToolbarModule,
   MatIconModule,
   MatCardModule,
-  MatTabsModule
+  MatTabsModule,
+  MatGridListModule
 ] ;
 
 @NgModule({
