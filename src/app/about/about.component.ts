@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
     const target = document.querySelector('.typing-2');
 
     if(target!=null) {
-      console.log(target);
+     
       target.textContent = this.letter;
     }
     else

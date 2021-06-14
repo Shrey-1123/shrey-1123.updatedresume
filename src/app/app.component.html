@@ -31,7 +31,7 @@
 </mat-toolbar>
 
 
-<mat-sidenav-container class="sidepart"  class="example-container">
+<mat-sidenav-container class="sidepart"  class="example-container" style="overflow: hidden;">
   <mat-sidenav #sidenav fxLayout="column" mode="over">
     <img id="profile1" class="avatar mat-elevation-z8" src="./assets/Profile.jpg">
     <h4 class="name">Shrey Kumar</h4>
@@ -62,17 +62,17 @@
       <app-projects></app-projects>
      </div>
 
-     <div>
+     <div data-aos="fade-left">
       <app-accomplishment></app-accomplishment>
      </div>
 
-     <div>
+     <div  data-aos="fade-right">
      <app-skills></app-skills>
      </div>
 
-     <div>
+     <div  data-aos="fade-left" data-aos-duration="3000" >
       <app-contact></app-contact>
      </div>
-     <app-footers fxFlexOffset="auto"></app-footers>
+     <app-footers fxFlexOffset="auto"  style="overflow: hidden;"></app-footers>
   </mat-sidenav-content>
 </mat-sidenav-container>

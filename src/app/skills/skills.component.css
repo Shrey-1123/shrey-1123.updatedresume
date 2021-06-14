@@ -31,11 +31,15 @@
 
   .wrapper {
     margin-top: 2rem;
-    display: grid;
+    display: grid ;
     grid-gap: 35px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr) ) ;
     background-color:transparent;
     color: #444;
+    margin-left: 2rem;
+    overflow:hidden;
+    overscroll-behavior-y: ease;
+    min-height: 200px;
     
   }
 
@@ -51,4 +55,13 @@
   img{ 
       height:90px;
       width:70px;
+  }
+  .mat-tab-body-content{
+    overflow:hidden;
+  }
+  
+  .Interests{
+    
+    height: 100px;
+    width: 180px;
   }

@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
     const target = document.querySelector('.typing');
 
     if(target!=null) {
-      console.log(target);
+      
       target.textContent = this.letter;
     }
     else
