@@ -17,11 +17,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AccomplishmentComponent } from './accomplishment/accomplishment.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-
-
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -37,7 +35,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     FootersComponent,
     AccomplishmentComponent,
     SkillsComponent,
-    ProjectDetailsComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +48,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ReactiveFormsModule,
     ModalModule.forRoot(), // It is necessary forRoot(), otherwise it will show no Providers 
     CarouselModule
+    
+
+
 
    
     

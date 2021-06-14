@@ -144,3 +144,16 @@
     background:black;
     color: white;
   }
+  
+  
+  .modal-body{
+    background-image: url(src/assets/img/portfolio/bgimg.jpg);
+    color: white;
+    
+  }
+  .modal-footer{
+    background-image: url(src/assets/img/portfolio/bgimg.jpg);
+  }
+  .modal-header{
+    background-color: black;color: white;
+  }

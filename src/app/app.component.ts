@@ -17,18 +17,14 @@ import * as AOS from 'aos';
 export class AppComponent {
   title = 'PotrfolioApp';
 
-  /**
-   *
-   */
-   @ViewChild('sidenav') sidenav!: MatSidenavContainer;
-   opened: boolean = false;
+  
 
   constructor(private spinner: NgxSpinnerService) {
  
   }
   ngOnInit() {
     
-    AOS.init();
+
     this.showSpinner();
     
    
@@ -42,27 +38,6 @@ export class AppComponent {
     }, 3000);
   }
   
-  @HostListener('window:resize',['$event'])
-  onResize(event:any) {
-    if(event.target.innerWidth > 960) {
-      this.sidenav.close();
-      this.opened = false;
-    }
-    if(event.target.innerWidth < 960){
-     this.sidenav.open();
-     this.opened = true;
-    }
-  }
-
-  IOpen(){
-    if(this.opened===false){
-       this.opened = true;
-    }
-    else{
-      this.opened =false;
-    }
-    //console.log(this.opened);
-  }
  
 
 }

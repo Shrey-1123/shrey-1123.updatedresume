@@ -43,11 +43,11 @@ export class ProjectsComponent implements OnInit {
     },
     { 
       Id: '2',
-      Name: 'Name 2',
+      Name: 'Dating App',
       Category:'ANGULAR/.NET/OTHERS',
-      Description:'Test',
+      Description:'A dating website',
       ShortDescription: 'A test short Description for above project.........',
-      URL:'http://lifestylestoreshreykumar.epizy.com',
+      URL:'https://github.com/Shrey-1123/DatingAppDemo',
       imgURL:'assets/img/portfolio/p1.jpg'
     }
     
