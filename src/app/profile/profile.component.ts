@@ -29,12 +29,12 @@ export class ProfileComponent implements OnInit {
   @HostListener('window:resize',['$event'])
   onResize(event:any) {
     if(event.target.innerWidth > 960) {
-      this.sidenav.close();
-      this.opened = false;
+      
+      
     }
     if(event.target.innerWidth < 960){
-     this.sidenav.open();
-     this.opened = true;
+     
+     
     }
   }
 
