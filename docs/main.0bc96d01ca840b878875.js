@@ -34,7 +34,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<section class=\"about\" id=\"about\" style=\"overflow: hidden;\">\n    <div class=\"max-width\">\n        <h1 class=\"subtitle fancy\"><span>About me</span></h1>\n        <div class=\"about-content\">\n            <div class=\"column left\">\n                <div class=\"img-wrapper\">\n                    <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShaggyMullet&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=CollarSweater&clotheColor=Blue03&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light'\n                    alt=\"\">\n                </div>\n            </div>\n            <div class=\"column right\">\n                <div class=\"text\">I'm Shrey and I'm a <span class=\"typing-2\"></span></div>\n                <p>Being a <b style=\"color:crimson\">Computer Science graduate</b> I \n                    have been learning various subjects related to different area of computers and technology. Particularly, I am interested in web development. I want to learn about different fields of web development. \n                    I want to be a full stack web developer.</p>\n                <a href=\"#\">Download CV</a>\n            </div>\n        </div>\n    </div>\n</section>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<section class=\"about\" id=\"about\" style=\"overflow: hidden;\">\n    <div class=\"max-width\">\n        <h1 class=\"subtitle fancy\"><span>About me</span></h1>\n        <div class=\"about-content\">\n            <div class=\"column left\">\n                <div class=\"img-wrapper\">\n                    <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShaggyMullet&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=CollarSweater&clotheColor=Blue03&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light'\n                    alt=\"\">\n                </div>\n            </div>\n            <div class=\"column right\">\n                <div class=\"text\">I'm Shrey and I'm a <span class=\"typing-2\"></span></div>\n                <p>Being a <b style=\"color:crimson\">Computer Science graduate</b> I \n                    have been learning various subjects related to different area of computers and technology. Particularly, I am interested in web development. I want to learn about different fields of web development. \n                    I want to be a full stack web developer.</p>\n                <a href=\"https://drive.google.com/file/d/1PMB9XZyHrEowUwheF_i-TE6Mz3olYjKa/view?usp=sharing\">Download CV</a>\n            </div>\n        </div>\n    </div>\n</section>\n\n");
 
 /***/ }),
 
@@ -251,7 +251,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<section fxLayout=\"row\" fxLayoutAlign=\"center center\" class=\"banner\">\r\n\r\n    <div fxFlex.gt-sm=\"50\" fxLayout=\"column\" fxLayoutAlign=\"center left\" class=\"textbox\" >\r\n        \r\n        \r\n        <h1 class=\"typing mat-display-3\"></h1>\r\n\r\n        <p class=\"mat-display-0\">{{ content.top.description }}</p>\r\n\r\n\r\n\r\n\r\n    </div>\r\n\r\n    <img  fxFlex=\"40\" [src]=\"content.top.image\"/>\r\n\r\n</section>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<section fxLayout=\"row\" fxLayoutAlign=\"center center\" class=\"banner\">\r\n\r\n    <div fxFlex.gt-sm=\"50\" fxLayout=\"column\" fxLayoutAlign=\"center left\" class=\"textbox\" >\r\n        \r\n        \r\n        <h1 class=\"typing mat-display-3\"></h1>\r\n\r\n        \r\n\r\n\r\n\r\n\r\n    </div>\r\n\r\n    <img  fxFlex=\"40\" [src]=\"content.top.image\"/>\r\n\r\n</section>\r\n");
 
 /***/ }),
 
@@ -451,12 +451,8 @@ let ProfileComponent = class ProfileComponent {
     }
     onResize(event) {
         if (event.target.innerWidth > 960) {
-            this.sidenav.close();
-            this.opened = false;
         }
         if (event.target.innerWidth < 960) {
-            this.sidenav.open();
-            this.opened = true;
         }
     }
     IOpen() {
@@ -1104,4 +1100,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.740b4f8640d932a8cd4c.js.map
+//# sourceMappingURL=main.0bc96d01ca840b878875.js.map
