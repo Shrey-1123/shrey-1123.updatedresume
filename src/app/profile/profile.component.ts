@@ -2,7 +2,6 @@ import { HostListener } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { MatSidenavContainer } from '@angular/material/sidenav';
-import { NgxSpinnerService } from 'ngx-spinner';
 import * as AOS from 'aos';
 import { ElementRef } from '@angular/core';
 

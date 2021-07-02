@@ -26,8 +26,12 @@
     flex: 1;
     min-height: 560px;
     margin-left: 0%;
-    background-color: #00b4cf;
     min-width: 380px;
+    background-image: url("D:/On Progress Projects/Portfolio/PotrfolioApp/src/assets/img/pexels-pixabay-414645.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
   }
   
   .right-container {
@@ -39,32 +43,15 @@
     align-items: center;
   }
   
-  .left-container {
-    overflow: hidden;
-    display: flex;
-    flex: 1;
-    height: 480px;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-  }
-  
-  .left-container p {
-    font-size: 0.9rem;
-  }
+
+ 
   
   .right-inner-container {
     width: 70%;
     height: 80%;
     text-align: center;
   }
-  
-  .left-inner-container {
-    height: 50%;
-    width: 80%;
-    text-align: center;
-    line-height: 22px;
-  }
+
   
   input, textarea {
     background-color: #eee;
