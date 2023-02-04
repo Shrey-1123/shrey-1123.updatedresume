@@ -11,7 +11,8 @@ export class AboutComponent implements OnInit {
     texts = ['Learner',
              'Front-end developer', 
              'Back-end developer',
-             'Tech enthusiast'
+             'Tech enthusiast',
+             'SFDC developer'
             ];
     count = 0;
     index = 0;
